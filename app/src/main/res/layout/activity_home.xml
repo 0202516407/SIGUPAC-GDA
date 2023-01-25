@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_degradado"
+    tools:context=".Home">
+
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+
+        android:text="GABRIEL GUERRERO"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="372dp"
+        android:layout_height="191dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv1"
+        app:srcCompat="@mipmap/logo"
+        tools:ignore="MissingConstraints" />
+
+    <ScrollView
+        android:layout_width="391dp"
+        android:layout_height="301dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        app:layout_constraintVertical_bias="0.141"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvMapas"
+                android:layout_width="408dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="1dp"
+                android:text="@string/Mapas"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.342" />
+
+            <ImageButton
+                android:id="@+id/imageButton6"
+                android:layout_width="379dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="15dp"
+                android:backgroundTint="#00FFFFFF"
+                android:onClick="SubirMapa"
+                android:src="@mipmap/mapa"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/tvRegistro"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="1dp"
+                android:text="@string/Registro"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/textView2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.512"
+                app:layout_constraintStart_toEndOf="@+id/imageButton" />
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="379dp"
+                android:layout_height="76dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="15dp"
+                android:backgroundTint="#00FFFFFF"
+                android:onClick="Registrar"
+                android:src="@mipmap/registro"
+                app:layout_constraintBottom_toTopOf="@+id/imageButton3"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="1dp"
+                android:text="@string/Buscar"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/textView4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.319"
+                app:layout_constraintStart_toEndOf="@+id/imageButton3" />
+
+
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="379dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="15dp"
+                android:backgroundTint="#00FFFFFF"
+                android:onClick="Consultar"
+                android:src="@mipmap/lupa"
+                app:layout_constraintBottom_toTopOf="@+id/imageButton5"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="1dp"
+                android:hint="@string/Configuración"
+                android:text="@string/Configuración"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/tvMapas"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.337"
+                app:layout_constraintStart_toEndOf="@+id/imageButton5" />
+
+
+            <ImageButton
+                android:id="@+id/imageButton5"
+                android:layout_width="379dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="15dp"
+                android:backgroundTint="#004BB6E8"
+                android:onClick="Configurar"
+                android:src="@mipmap/configuraciones"
+                app:layout_constraintBottom_toTopOf="@+id/imageButton6"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">SIGUPAC-GDA</string>
+    <string name="tipoNegocio">Tipo de Comercio *</string>
+    <string name="nombreComercio">Nombre del Comercio *</string>
+    <string name="nombrePropietario">Nombre del Propietario</string>
+    <string name="cedulaPropietario">Cedula del Propietario</string>
+    <string name="numeroPropietario">Numero del Propietario</string>
+    <string name="Ruc">RUC</string>
+    <string name="sector">Sector</string>
+    <string name="codigo">Codigo de Comercio *</string>
+    <string name="contabilidad">Contabilidad *</string>
+    <string name="imagen">Selecciona una imagen</string>
+    <string name="Buscar">"Buscar Datos"</string>
+    <string name="Registro">"Registro de Comercio"</string>
+    <string name="Configuración">"Configuracion personal"</string>
+    <string name="Mapas">Mapas</string>
+    <string name="guardar">Guardar</string>
+    <string name="enlace">Enlace de mapa</string>
+    <string name="codigoMapa">Codigo de mapa</string>
+    <string name="nombreMapa">Nombre del Mapa</string>
+    <string name="idMapa">ID de Mapa</string>
+    <string name="idLoginCedula">Usuario</string>
+    <string name="passwordLoginCedula">Contraseña</string>
+    <string name="guardarloging">Ingresar</string>
+    <string name="idpasswordActual">Contraseña Actual</string>
+    <string name="idpasswordNueva">Contraseña Nueva</string>
+    <string name="idpasswordRepetir">Repetir Contraseña</string>
+    <string name="bGuardarPassword">Guardar</string>
+
+
+</resources>
